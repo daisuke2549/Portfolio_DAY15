@@ -102,6 +102,7 @@ li {
   align-items: center;
   justify-content: center;
   height: 540px;
+  background-image: url(../img/skill/macbook.jpg);
 }
 
 .logo-name {
@@ -111,7 +112,7 @@ li {
   display: block;
   margin-bottom: 5px;
   text-align: center;
-  color: #757575;
+  color: blue;
 }
 
 .logo {
@@ -137,6 +138,7 @@ li {
   text-align: center;
   letter-spacing: .2em;
   font-weight: bold;
+  color: blue;
 }
 
 /*--------------------------------
@@ -159,7 +161,7 @@ li {
 }
 
 .gnav-link {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   letter-spacing: .1em;
   text-transform: lowercase;
@@ -186,8 +188,9 @@ li {
  Feature
 ---------------------------------*/
 .feature-section .inner {
-  max-width: 1000px;
+  max-width: 1000px;  
 }
+
 
 .feature-item {
   display: flex;
@@ -200,7 +203,9 @@ li {
 }
 
 .feature-body {
+  padding-top: 25px;
   flex: 1;
+  text-align: center;
 }
 
 .feature-body p:not(:last-child) {
@@ -235,6 +240,10 @@ li {
   font-weight: bold;
   margin-top: 8px;
 }
+.works-item img{
+  height:200px;
+}
+
 
 .works-text {
   font-size: 10px;
@@ -285,9 +294,11 @@ li {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: -50px;
+  margin-left:70px;
 }
 
 .skill-item {
+  padding-left: 40px;
   display: flex;
   flex: 0 0 46%;
   flex-wrap: wrap;
@@ -407,6 +418,35 @@ li {
   width:30px;
 }
 
+.socials-email{
+  position: relative;
+  float:left;
+  left:-60px;
+  width:100px;
+}
+
+
+
+.socials-twitter{
+  position: relative;
+  float:left;
+  left:0px;
+  top:-48px;
+  width:120px;
+  height: 100px;
+}
+
+.socials-linkedin{
+  position: relative;
+  float:left;
+  left:105px;
+  top:-148px;
+  width:50px;
+  height:90px;
+}
+
+
+
 
 
 /*--------------------------------
@@ -445,6 +485,11 @@ li {
   body {
     font-size: 13px;
     line-height: 1.7;
+    padding-right: 0;
+    margin-right:0px;
+  }
+  .wrapper{
+    overflow:hidden;
   }
 
   .pc-only {
@@ -475,9 +520,10 @@ li {
 
   /* ヘッダー */
   .header {
-    height: 70vh;
-
+    height: 70vh; 
+    width:400px;
   }
+
 
   .logo-name {
     font-size: 16px;
@@ -494,7 +540,13 @@ li {
 
   /* グローバルナビ */
   .gnav-list {
-    padding: 0 10px;
+    padding: 0 2px;
+    margin-right: 0px;
+  }
+
+  .gnav-item{
+    margin-left: 4px;
+    padding-left: 1px;
   }
 
   .gnav-link {
@@ -547,6 +599,10 @@ li {
   }
 
   /* Skill */
+  .section-body skill{
+    margin-left: 20px;
+  }
+
   .skill-list {
     display: block;
     margin-bottom: 0;
@@ -555,6 +611,7 @@ li {
   .skill-item {
     max-width: 100%;
     margin-bottom: 35px;
+    padding-left:10px;
   }
 
   .skill-item:last-child {
@@ -600,10 +657,17 @@ li {
   /* Contact */
   .contact-item {
     width: 70px;
+    margin:auto;
+  }
+
+  .contact-list{
+    margin-right:50px;
   }
 
   /* フッター */
   .footer .inner {
     padding: 20px 0;
+    font-size: 10px;
+  
   }
 }
